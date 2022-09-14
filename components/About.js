@@ -94,6 +94,7 @@ export default function About() {
   return (
     <AboutContainer>
       {/* <p>Who I am</p> */}
+
       <h2>About Me</h2>
 
       <CardsContainer>
