@@ -1,0 +1,20 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+        width="261"
+        height="83"
+        viewBox="0 0 261 83"
+ >
+        <text
+          id="Mwendwa"
+          transform="translate(7 62)"
+          fill="#fb0303"
+          stroke="#0d0101"
+          stroke-width="2"
+          font-size="52"
+          font-family="Jokerman-Regular, Jokerman"
+        >
+          <tspan x="0" y="0">
+            Mwendwa
+          </tspan>
+        </text>
+</svg>
