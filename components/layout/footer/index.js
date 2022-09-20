@@ -1,5 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
+const FooterWrapper = styled.footer`
+  margin-top: auto;
+`;
 export default function Footer() {
-  return <div>Footer</div>;
+  return <FooterWrapper>Footer</FooterWrapper>;
 }
