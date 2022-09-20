@@ -42,7 +42,7 @@ const NavWrapper = styled.div`
 `;
 const Logo = styled.div`
   padding-left: 10px;
-  font-family: Jokerman;
+  font-family: Jokerman, Roboto;
   font-size: 48px;
 
   @media (min-width: 1200px) {
@@ -55,7 +55,7 @@ const NavItems = styled.ul`
   justify-content: center;
   list-style: none;
   margin: 0 20px;
-  font-family: jokerman;
+  font-family: jokerman, Roboto;
 `;
 const NavItem = styled.li`
   padding: 20px 0;
