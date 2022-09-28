@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import Headroom from "react-headroom";
 
 const NavWrapper = styled.div`
   display: flex;
@@ -39,33 +40,35 @@ const NavItem = styled.li`
 
 export default function Navbar() {
   return (
-    <NavWrapper>
-      <Logo>
-        <LogoImage src="/logo.svg" alt="logo" width={256} height={79} />
-      </Logo>
-      <NavItems>
-        <NavItem>
-          <Link href="/projects">
-            <a>Projects</a>
-          </Link>
-        </NavItem>
+    <Headroom style={{ marginBottom: "20px" }}>
+      <NavWrapper>
+        <Logo>
+          <LogoImage src="/logo.svg" alt="logo" width={256} height={79} />
+        </Logo>
+        <NavItems>
+          <NavItem>
+            <Link href="/projects">
+              <a>Projects</a>
+            </Link>
+          </NavItem>
 
-        <NavItem>
-          <Link href="https://blog.johnmwendwa.me">
-            <a>Blog</a>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
-        </NavItem>
-      </NavItems>
-    </NavWrapper>
+          <NavItem>
+            <Link href="https://blog.johnmwendwa.me">
+              <a>Blog</a>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
+          </NavItem>
+        </NavItems>
+      </NavWrapper>
+    </Headroom>
   );
 }
