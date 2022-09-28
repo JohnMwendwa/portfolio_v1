@@ -3,14 +3,16 @@ import styled from "styled-components";
 const BackBtn = styled.div`
   z-index: 100;
   position: absolute;
+  right: 3rem;
+  top: -1.5rem;
   > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    background-color: orange;
+    background-color: yellow;
     border: 0.2rem solid black;
     text-decoration: none;
     > svg {
