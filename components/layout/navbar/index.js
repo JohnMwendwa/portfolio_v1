@@ -47,12 +47,6 @@ export default function Navbar() {
         </Logo>
         <NavItems>
           <NavItem>
-            <Link href="/projects">
-              <a>Projects</a>
-            </Link>
-          </NavItem>
-
-          <NavItem>
             <Link href="https://blog.johnmwendwa.me">
               <a>Blog</a>
             </Link>
