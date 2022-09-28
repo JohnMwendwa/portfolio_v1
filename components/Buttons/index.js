@@ -5,7 +5,7 @@ const BackBtn = styled.div`
   position: absolute;
   right: 3rem;
   top: -1.5rem;
-  > a {
+  > span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,8 +28,15 @@ const BackBtn = styled.div`
 
 export const BackToTopBtn = () => {
   return (
-    <BackBtn>
-      <a href="#top">
+    <BackBtn
+      onClick={() =>
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      }
+    >
+      <span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -42,7 +49,7 @@ export const BackToTopBtn = () => {
         >
           <path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path>
         </svg>
-      </a>
+      </span>
     </BackBtn>
   );
 };
