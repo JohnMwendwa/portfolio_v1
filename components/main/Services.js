@@ -37,11 +37,17 @@ const Card = styled.div`
   width: 350px;
   height: 300px;
   border: 1px solid yellow;
+  border-radius: 5px;
 
   & h4 {
     font-size: 1.525em;
     margin: 5px 0 0 0;
   }
+`;
+const CardImage = styled.div`
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
 `;
 const CardContent = styled.div`
   & p {
@@ -58,9 +64,17 @@ export default function Services() {
 
       <CardWrapper>
         <Card>
-          <Image src="/seo.svg" alt="SEO icon" width={100} height={100} />
-          <h4>Search Engine Optimization</h4>
+          <CardImage>
+            <Image
+              src="/seo.svg"
+              alt="SEO icon"
+              width={80}
+              height={80}
+              layout="responsive"
+            />
+          </CardImage>
           <CardContent>
+            <h4>Search Engine Optimization</h4>
             <p>
               Experience with
               <br />
@@ -70,7 +84,15 @@ export default function Services() {
         </Card>
 
         <Card>
-          <Image src="/monitor.svg" alt="SEO icon" width={100} height={100} />
+          <CardImage>
+            <Image
+              src="/monitor.svg"
+              alt="SEO icon"
+              width={30}
+              height={30}
+              layout="responsive"
+            />
+          </CardImage>
           <CardContent>
             <h4>UI Design</h4>
             <p>
@@ -82,7 +104,15 @@ export default function Services() {
         </Card>
 
         <Card>
-          <Image src="/coding.svg" alt="coding icon" width={100} height={100} />
+          <CardImage>
+            <Image
+              src="/coding.svg"
+              alt="coding icon"
+              width={80}
+              height={80}
+              layout="responsive"
+            />
+          </CardImage>
           <CardContent>
             <h4>Front-End Developer</h4>
             <p>
@@ -94,12 +124,15 @@ export default function Services() {
         </Card>
 
         <Card>
-          <Image
-            src="/database.svg"
-            alt="database icon"
-            width={100}
-            height={100}
-          />
+          <CardImage>
+            <Image
+              src="/database.svg"
+              alt="database icon"
+              width={80}
+              height={80}
+              layout="responsive"
+            />
+          </CardImage>
           <CardContent>
             <h4>Back-End Developer</h4>
             <p>
@@ -111,7 +144,15 @@ export default function Services() {
         </Card>
 
         <Card>
-          <Image src="/phone.svg" alt="phone icon" width={100} height={100} />
+          <CardImage>
+            <Image
+              src="/phone.svg"
+              alt="phone icon"
+              width={80}
+              height={80}
+              layout="responsive"
+            />
+          </CardImage>
           <CardContent>
             <h4>Mobile App Developer</h4>
             <p>
