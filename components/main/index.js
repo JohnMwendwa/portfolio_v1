@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { NormalButton } from "../Buttons";
 import Link from "next/link";
 import Services from "./Services";
+import Projects from "./Projects";
 
 const Profile = styled.div`
   display: flex;
@@ -83,6 +84,7 @@ export default function Main() {
         </ProfileDetails>
       </Profile>
       <Services />
+      <Projects />
     </div>
   );
 }
