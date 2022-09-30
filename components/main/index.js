@@ -3,6 +3,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { NormalButton } from "../Buttons";
 import Link from "next/link";
+import Services from "./Services";
 
 const Profile = styled.div`
   display: flex;
@@ -81,6 +82,7 @@ export default function Main() {
           </Link>
         </ProfileDetails>
       </Profile>
+      <Services />
     </div>
   );
 }
