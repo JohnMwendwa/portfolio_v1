@@ -26,6 +26,8 @@ const BackBtn = styled.div`
   }
 `;
 
+const Button = styled.button``;
+
 export const BackToTopBtn = () => {
   return (
     <BackBtn
@@ -51,4 +53,8 @@ export const BackToTopBtn = () => {
       </span>
     </BackBtn>
   );
+};
+
+export const NormalButton = (text) => {
+  return <Button>{text}</Button>;
 };
