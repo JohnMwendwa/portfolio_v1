@@ -26,7 +26,27 @@ const BackBtn = styled.div`
   }
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  font-weight: 700;
+  border-radius: 100px;
+  font-size: 1em;
+  padding: 8px 25px;
+  border: none;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  box-shadow: 0 0 0 1px black;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: none;
+  }
+
+  @media (min-width: 768px) {
+    padding: 14px 55px;
+    font-size: 1.325em;
+  }
+`;
 
 export const BackToTopBtn = () => {
   return (
@@ -55,6 +75,6 @@ export const BackToTopBtn = () => {
   );
 };
 
-export const NormalButton = (text) => {
+export const NormalButton = ({ text }) => {
   return <Button>{text}</Button>;
 };
