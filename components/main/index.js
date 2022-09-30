@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
+import { NormalButton } from "../Buttons";
+import Link from "next/link";
 
 const Profile = styled.div`
   display: flex;
@@ -71,6 +73,12 @@ export default function Main() {
           <p>
             A very passionate web and mobile developer based in Nairobi, Kenya.
           </p>
+
+          <Link href="/contact">
+            <a>
+              <NormalButton text="Get in Touch" />
+            </a>
+          </Link>
         </ProfileDetails>
       </Profile>
     </div>
