@@ -5,6 +5,8 @@ const BackBtn = styled.div`
   position: absolute;
   right: 3rem;
   top: -1.5rem;
+  cursor: pointer;
+
   > span {
     display: flex;
     align-items: center;
