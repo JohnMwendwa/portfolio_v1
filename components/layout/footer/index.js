@@ -22,14 +22,31 @@ const CopyrightWrapper = styled.div`
 `;
 
 const Copyright = styled.div``;
+const Address = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 export default function Footer() {
   return (
     <FooterWrapper>
+      <Address>
+        <div>
+          <h5>Address</h5>
+          <p>Raphaels Stage, Buruburu 1</p>
+        </div>
+        <div>
+          <h5>Email</h5>
+          <p>dev@johnmwendwa@gmail.com</p>
+        </div>
+        <div>
+          <h5>Phone</h5>
+          <p>+254716237927</p>
+        </div>
+      </Address>
       <CopyrightWrapper>
         <BackToTopBtn />
-        <Copyright>&copy; {new Date().getFullYear()}</Copyright>
-        <div>John Mwendwa</div>
+        <Copyright>&copy; John Mwendwa {new Date().getFullYear()}</Copyright>
       </CopyrightWrapper>
     </FooterWrapper>
   );
