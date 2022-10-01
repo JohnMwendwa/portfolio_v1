@@ -24,7 +24,28 @@ const CopyrightWrapper = styled.div`
 const Copyright = styled.div``;
 const Address = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 45px 0;
+
+  & h5 {
+    margin: 10px 0;
+    font-size: 1.125em;
+  }
+  & p,
+  a {
+    margin: 0;
+    font-size: 0.825em;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 `;
 
 export default function Footer() {
@@ -33,15 +54,17 @@ export default function Footer() {
       <Address>
         <div>
           <h5>Address</h5>
-          <p>Raphaels Stage, Buruburu 1</p>
+          <p>Nairobi, kenya</p>
         </div>
         <div>
           <h5>Email</h5>
-          <p>dev@johnmwendwa@gmail.com</p>
+          <a href="mailto:dev.johnmwendwa@gmail.com">
+            dev@johnmwendwa@gmail.com
+          </a>
         </div>
         <div>
           <h5>Phone</h5>
-          <p>+254716237927</p>
+          <a href="tel:+254716237927">+254716237927</a>
         </div>
       </Address>
       <CopyrightWrapper>
