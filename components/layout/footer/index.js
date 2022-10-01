@@ -13,8 +13,7 @@ const FooterWrapper = styled.footer`
 `;
 const CopyrightWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 20px 30px;
   color: rgba(255, 255, 255, 0.5);
@@ -39,12 +38,15 @@ const Address = styled.div`
     margin: 0;
     font-size: 0.825em;
     margin-bottom: 20px;
-    line-height: 1;
   }
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-evenly;
+
+    & p {
+      margin: 0;
+    }
   }
 `;
 
@@ -58,9 +60,11 @@ export default function Footer() {
         </div>
         <div>
           <h5>Email</h5>
-          <a href="mailto:dev.johnmwendwa@gmail.com">
-            dev@johnmwendwa@gmail.com
-          </a>
+          <p>
+            <a href="mailto:dev.johnmwendwa@gmail.com">
+              dev@johnmwendwa@gmail.com
+            </a>
+          </p>
         </div>
         <div>
           <h5>Phone</h5>
