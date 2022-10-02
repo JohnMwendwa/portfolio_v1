@@ -25,6 +25,7 @@ const AddressContainer = styled.div`
 
     & p {
       margin: 0;
+      font-size: 1em;
     }
   }
 `;
