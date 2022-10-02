@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 import { BackToTopBtn } from "../../Buttons";
 
@@ -13,6 +14,7 @@ const FooterWrapper = styled.footer`
 `;
 const CopyrightWrapper = styled.div`
   display: flex;
+  position: relative;
   justify-content: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 20px 30px;
@@ -51,26 +53,32 @@ const Address = styled.div`
 `;
 
 export default function Footer() {
+  const router = useRouter();
+  const path = router.route;
   return (
     <FooterWrapper>
-      <Address>
-        <div>
-          <h5>Address</h5>
-          <p>Nairobi, kenya</p>
-        </div>
-        <div>
-          <h5>Email</h5>
-          <p>
-            <a href="mailto:dev.johnmwendwa@gmail.com">
-              dev@johnmwendwa@gmail.com
-            </a>
-          </p>
-        </div>
-        <div>
-          <h5>Phone</h5>
-          <a href="tel:+254716237927">+254716237927</a>
-        </div>
-      </Address>
+      {path !== "/contact" ? (
+        <Address>
+          <div>
+            <h5>Address</h5>
+            <p>Nairobi, kenya</p>
+          </div>
+          <div>
+            <h5>Email</h5>
+            <p>
+              <a href="mailto:dev.johnmwendwa@gmail.com">
+                dev@johnmwendwa@gmail.com
+              </a>
+            </p>
+          </div>
+          <div>
+            <h5>Phone</h5>
+            <a href="tel:+254716237927">+254716237927</a>
+          </div>
+        </Address>
+      ) : (
+        ""
+      )}
       <CopyrightWrapper>
         <BackToTopBtn />
         <Copyright>&copy; John Mwendwa {new Date().getFullYear()}</Copyright>
