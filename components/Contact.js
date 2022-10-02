@@ -4,7 +4,9 @@ import Address from "./address/Address";
 const Wrapper = styled.div`
   text-align: center;
   padding: 100px 0;
+  min-height: calc(100vh - 171px);
   background-color: yellow;
+
   > p {
     text-transform: uppercase;
     font-size: 0.9375em;
