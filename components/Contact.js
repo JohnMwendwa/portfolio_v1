@@ -5,13 +5,13 @@ const Wrapper = styled.div`
   text-align: center;
   padding: 100px 0;
   min-height: calc(100vh - 171px);
-  background-color: yellow;
+  background-color: ${(p) => p.theme.colors.bgColor};
 
   > p {
     text-transform: uppercase;
     font-size: 0.9375em;
     font-weight: 400;
-    color: #aaaaaa;
+    color: ${(p) => p.theme.colors.secondaryTextColor};
     margin: 0 0 10px;
     letter-spacing: 2px;
   }
