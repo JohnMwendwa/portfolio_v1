@@ -17,16 +17,13 @@ const ProfileWrapper = styled.div`
 
 const ProfileImageContainer = styled.div`
   border: 2px solid black;
-  width: 400px;
-
-  @media (max-width: 768px) {
-    max-width: 300px;
-  }
+  max-width: 300px;
+  min-width: 275px;
 `;
 
 const ProfileImage = styled(Image)`
-  width: 100%;
   object-fit: cover;
+  min-width: 275px;
 `;
 
 const ProfileDetails = styled.div`
@@ -35,18 +32,16 @@ const ProfileDetails = styled.div`
   > h1 {
     margin: 0;
     padding: 0;
-    text-align: end;
-    font-size: 3.75em;
+    text-align: center;
 
-    @media (max-width: 768px) {
-      font-size: 2.625em;
-      text-align: center;
-      line-height: 0.95em;
-      padding-top: 20px;
-    }
-    @media (max-width: 960px) {
-      text-align: center;
-      line-height: 0.95em;
+    font-size: 2.625em;
+    text-align: center;
+    line-height: 0.95em;
+    padding-top: 20px;
+
+    @media (min-width: 960px) {
+      text-align: end;
+      font-size: 3.75em;
     }
   }
 `;
