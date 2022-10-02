@@ -8,8 +8,8 @@ const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: yellow;
-  border-bottom: 1px solid black;
+  background-color: ${(p) => p.theme.colors.bgColor};
+  border-bottom: 1px solid ${(p) => p.theme.colors.tertiaryColor};
   font-size: 1.25rem;
 
   @media (max-width: 600px) {
