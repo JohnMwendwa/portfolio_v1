@@ -36,7 +36,7 @@ const Card = styled.div`
   padding: 0 35px;
   width: 270px;
   height: 300px;
-  border: 5px solid orange;
+  border: 5px solid ${(p) => p.theme.colors.secondaryColor};
   border-radius: 5px;
 
   & h4 {
