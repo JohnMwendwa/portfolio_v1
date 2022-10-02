@@ -34,14 +34,18 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 35px;
-  width: 350px;
+  width: 270px;
   height: 300px;
-  border: 1px solid yellow;
+  border: 10px solid orange;
   border-radius: 5px;
 
   & h4 {
     font-size: 1.525em;
     margin: 5px 0 0 0;
+  }
+
+  @media (min-width: 300px) {
+    width: 350px;
   }
 `;
 const CardImage = styled.div`
