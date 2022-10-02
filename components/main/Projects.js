@@ -50,7 +50,6 @@ const ProjectCard = styled.div`
     transform: perspective(800px) rotateY(0deg);
   }
 `;
-const ImageContainer = styled.div``;
 
 const Img = styled(Image)`
   border-radius: 10px;
@@ -90,15 +89,13 @@ export default function Projects() {
       <h2>Projects</h2>
       <Wrapper>
         <ProjectCard>
-          <ImageContainer>
-            <Img
-              src="/projects/chatbot.png"
-              alt="chatbot image"
-              width={300}
-              height={300}
-              layout="responsive"
-            />
-          </ImageContainer>
+          <Img
+            src="/projects/chatbot.png"
+            alt="chatbot image"
+            width={300}
+            height={300}
+            layout="responsive"
+          />
 
           <ProjectInfo>
             <h4>CHATBOT</h4>
@@ -110,15 +107,14 @@ export default function Projects() {
         </ProjectCard>
 
         <ProjectCard>
-          <ImageContainer>
-            <Img
-              src="/projects/blog.png"
-              alt="blog image"
-              width={300}
-              height={300}
-              layout="responsive"
-            />
-          </ImageContainer>
+          <Img
+            src="/projects/blog.png"
+            alt="blog image"
+            width={300}
+            height={300}
+            layout="responsive"
+          />
+
           <ProjectInfo>
             <h4>BLOG</h4>
             <p>
@@ -129,15 +125,14 @@ export default function Projects() {
         </ProjectCard>
 
         <ProjectCard>
-          <ImageContainer>
-            <Img
-              src="/projects/todolist.png"
-              alt="todolist image"
-              width={300}
-              height={300}
-              layout="responsive"
-            />
-          </ImageContainer>
+          <Img
+            src="/projects/todolist.png"
+            alt="todolist image"
+            width={300}
+            height={300}
+            layout="responsive"
+          />
+
           <ProjectInfo>
             <h4>TODOLIST</h4>
             <p>
