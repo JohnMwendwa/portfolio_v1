@@ -62,7 +62,7 @@ const ProjectInfo = styled.div`
   justify-content: center;
   position: absolute;
   background-color: yellow;
-  border: 1px solid orange;
+  border: 5px solid orange;
   border-radius: 10px;
   top: 0;
   bottom: 0;
