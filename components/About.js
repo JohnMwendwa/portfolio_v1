@@ -8,7 +8,7 @@ const AboutContainer = styled.div`
     font-size: 0.9375em;
     font-weight: 400;
     text-transform: uppercase;
-    color: #aaaaaa;
+    color: ${(p) => p.theme.colors.secondaryTextColor};
     letter-spacing: 3px;
     margin-bottom: 0;
   }
