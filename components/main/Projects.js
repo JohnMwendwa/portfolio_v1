@@ -5,10 +5,10 @@ import styled from "styled-components";
 const ProjectsContainer = styled.div`
   text-align: center;
   padding: 100px 0;
-  background-color: yellow;
+  background-color: ${(p) => p.theme.colors.bgColor};
 
   > p {
-    color: #aaa;
+    color: ${(p) => p.theme.colors.secondaryTextColor};
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -60,8 +60,8 @@ const ProjectInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  background-color: yellow;
-  border: 5px solid orange;
+  background-color: ${(p) => p.theme.colors.primaryColor};
+  border: 5px solid ${(p) => p.theme.colors.tertiaryColor};
   border-radius: 10px;
   top: 0;
   bottom: 0;
