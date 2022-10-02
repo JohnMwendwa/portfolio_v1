@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 const ProjectsContainer = styled.div`
@@ -29,7 +30,6 @@ const ProjectCard = styled.div`
   position: relative;
   width: 325px;
   min-width: 275px;
-  border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 
@@ -89,57 +89,69 @@ export default function Projects() {
       <h2>Projects</h2>
       <Wrapper>
         <ProjectCard>
-          <Img
-            src="/projects/chatbot.png"
-            alt="chatbot image"
-            width={300}
-            height={300}
-            layout="responsive"
-          />
+          <Link href="https://chatbot.johnmwendwa.me">
+            <a>
+              <Img
+                src="/projects/chatbot.png"
+                alt="chatbot image"
+                width={300}
+                height={300}
+                layout="responsive"
+              />
 
-          <ProjectInfo>
-            <h4>CHATBOT</h4>
-            <p>
-              Chat with anyone anonymously without your data getting saved in
-              any database. In other words, leave no evidence behind.
-            </p>
-          </ProjectInfo>
+              <ProjectInfo>
+                <h4>CHATBOT</h4>
+                <p>
+                  Chat with anyone anonymously without your data getting saved
+                  in any database. In other words, leave no evidence behind.
+                </p>
+              </ProjectInfo>
+            </a>
+          </Link>
         </ProjectCard>
 
         <ProjectCard>
-          <Img
-            src="/projects/blog.png"
-            alt="blog image"
-            width={300}
-            height={300}
-            layout="responsive"
-          />
+          <Link href="https://blog.johnmwendwa.me">
+            <a>
+              <Img
+                src="/projects/blog.png"
+                alt="blog image"
+                width={300}
+                height={300}
+                layout="responsive"
+              />
 
-          <ProjectInfo>
-            <h4>BLOG</h4>
-            <p>
-              Created a blog for curious developers. I write weekly articles and
-              sometimes daily.
-            </p>
-          </ProjectInfo>
+              <ProjectInfo>
+                <h4>BLOG</h4>
+                <p>
+                  Created a blog for curious developers. I write weekly articles
+                  and sometimes daily.
+                </p>
+              </ProjectInfo>
+            </a>
+          </Link>
         </ProjectCard>
 
         <ProjectCard>
-          <Img
-            src="/projects/todolist.png"
-            alt="todolist image"
-            width={300}
-            height={300}
-            layout="responsive"
-          />
+          <Link href="https://johnmwendwa.me/todolist">
+            <a>
+              <Img
+                src="/projects/todolist.png"
+                alt="todolist image"
+                width={300}
+                height={300}
+                layout="responsive"
+              />
 
-          <ProjectInfo>
-            <h4>TODOLIST</h4>
-            <p>
-              Plan your daily tasks with this simple todo app. You can delete,
-              edit and filter your tasks.
-            </p>
-          </ProjectInfo>
+              <ProjectInfo>
+                <h4>TODOLIST</h4>
+                <p>
+                  Plan your daily tasks with this simple todo app. You can
+                  delete, edit and filter your tasks.
+                </p>
+              </ProjectInfo>
+            </a>
+          </Link>
         </ProjectCard>
       </Wrapper>
     </ProjectsContainer>
