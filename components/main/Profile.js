@@ -7,7 +7,7 @@ const ProfileWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: yellow;
+  background-color: ${(p) => p.theme.colors.bgColor};
   padding: 60px;
 
   @media (max-width: 768px) {
