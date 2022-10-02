@@ -14,8 +14,8 @@ const BackBtn = styled.div`
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: yellow;
-    border: 0.2rem solid black;
+    background-color: ${(p) => p.theme.colors.bgColor};
+    border: 0.2rem solid ${(p) => p.theme.colors.tertiaryColor};
     text-decoration: none;
     > svg {
       width: 1.7rem;
@@ -36,7 +36,7 @@ const Button = styled.button`
   border: none;
   transition: all 0.3s ease-out;
   text-align: center;
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 2px ${(p) => p.theme.colors.tertiaryColor};
   background-color: transparent;
   cursor: pointer;
 
