@@ -10,16 +10,15 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   justify-content: space-between;
   margin-top: auto;
-  background-color: ${(p) => p.theme.colors.tertiaryColor};
-  color: white;
+  padding: 40px 10vw 0;
+  background-color: ${(p) => p.theme.colors.secondaryColor};
 `;
 const CopyrightWrapper = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
-  border-top: 1px solid ${(p) => p.theme.colors.secondaryTextColor};
-  padding: 20px 30px;
-  color: ${(p) => p.theme.colors.secondaryTextColor};
+  border-top: 1px solid ${(p) => p.theme.colors.accentColor};
+  padding: 40px 30px;
   line-height: 2.8rem;
 `;
 
