@@ -8,7 +8,7 @@ const ProjectsContainer = styled.div`
   background-color: ${(p) => p.theme.colors.bgColor};
 
   > p {
-    color: ${(p) => p.theme.colors.secondaryTextColor};
+    color: ${(p) => p.theme.colors.accentColor};
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -56,12 +56,12 @@ const Img = styled(Image)`
 `;
 const ProjectInfo = styled.div`
   display: flex;
-  padding: 0 20px;
+  padding: 0 30px;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   background-color: ${(p) => p.theme.colors.primaryColor};
-  border: 5px solid ${(p) => p.theme.colors.tertiaryColor};
+  border: 2px solid ${(p) => p.theme.colors.accentColor};
   border-radius: 10px;
   top: 0;
   bottom: 0;
@@ -73,7 +73,7 @@ const ProjectInfo = styled.div`
     font-size: 28px;
   }
   & p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   ${ProjectCard}:hover & {
