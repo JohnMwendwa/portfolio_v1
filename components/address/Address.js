@@ -11,6 +11,11 @@ const AddressContainer = styled.div`
   & h5 {
     margin: 10px 0;
     font-size: 1.125em;
+    background: -webkit-linear-gradient(yellow, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
   }
   & p,
   a {
