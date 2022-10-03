@@ -4,9 +4,11 @@ import styled from "styled-components";
 const ServicesContainer = styled.div`
   text-align: center;
   padding: 100px 0;
+  background-color: ${(c) => c.theme.colors.tertiaryColor};
+  color: black;
 
   > p {
-    color: #aaa;
+    color: ${(c) => c.theme.colors.primaryColor};
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -36,7 +38,7 @@ const Card = styled.div`
   padding: 0 35px;
   width: 270px;
   height: 300px;
-  border: 5px solid ${(p) => p.theme.colors.secondaryColor};
+  border: 2px solid ${(p) => p.theme.colors.primaryColor};
   border-radius: 5px;
 
   & h4 {
