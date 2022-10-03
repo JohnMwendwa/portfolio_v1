@@ -14,15 +14,16 @@ const BackBtn = styled.div`
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: ${(p) => p.theme.colors.bgColor};
-    border: 0.2rem solid ${(p) => p.theme.colors.tertiaryColor};
+    background-color: ${(p) => p.theme.colors.primaryColor};
+    border: 0.2rem solid ${(p) => p.theme.colors.accentColor};
     text-decoration: none;
+
     > svg {
       width: 1.7rem;
       height: 1.7rem;
     }
     > svg path {
-      // fill: white;
+      fill: ${(p) => p.theme.colors.accentColor};
       transition: all 0.3s ease-in-out;
     }
   }
@@ -36,9 +37,10 @@ const Button = styled.button`
   border: none;
   transition: all 0.3s ease-out;
   text-align: center;
-  box-shadow: 0 0 0 2px ${(p) => p.theme.colors.tertiaryColor};
+  box-shadow: 0 0 0 2px ${(p) => p.theme.colors.accentColor};
   background-color: transparent;
   cursor: pointer;
+  color: white;
 
   &:active {
     box-shadow: none;
