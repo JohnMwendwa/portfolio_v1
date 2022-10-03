@@ -6,7 +6,7 @@ const AddressContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 45px 0;
+  padding: 45px 0 90px;
 
   & h5 {
     margin: 10px 0;
