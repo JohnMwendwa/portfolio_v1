@@ -71,6 +71,11 @@ const ProjectInfo = styled.div`
   & h4 {
     margin: 0;
     font-size: 28px;
+    background: -webkit-linear-gradient(yellow, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
   }
   & p {
     font-size: 20px;
