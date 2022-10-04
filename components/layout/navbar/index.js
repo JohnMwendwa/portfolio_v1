@@ -25,9 +25,9 @@ const LogoImage = styled.img`
 `;
 const NavItems = styled.ul`
   display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0 20px;
-  padding: 0px;
 `;
 const NavItem = styled.li`
   padding: 20px 0;
