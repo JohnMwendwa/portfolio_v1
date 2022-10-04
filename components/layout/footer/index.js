@@ -28,8 +28,8 @@ export default function Footer() {
   const router = useRouter();
   const path = router.route;
   return (
-    <FooterWrapper>
-      {path !== "/contact" ? <Address /> : ""}
+    <FooterWrapper id="contact">
+      <Address />
       <CopyrightWrapper>
         <BackToTopBtn />
         <Copyright>&copy; John Mwendwa {new Date().getFullYear()}</Copyright>
