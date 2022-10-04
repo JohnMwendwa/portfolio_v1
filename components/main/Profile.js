@@ -13,7 +13,6 @@ const ProfileWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 400px;
   }
 `;
 
@@ -37,7 +36,7 @@ const ProfileDetails = styled.div`
 
   > p {
     margin-bottom: 40px;
-    padding: 0 5px;
+    padding: 0 2px;
   }
 `;
 
@@ -82,7 +81,7 @@ export default function Profile() {
               color: "yellow",
               fontWeight: 500,
             }}
-          />{" "}
+          />
           .
         </p>
 
