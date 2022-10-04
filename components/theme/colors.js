@@ -1,8 +1,7 @@
 export const colors = {
-  bgColor: "#F2CE16",
-  primaryColor: "#F2BC1B",
-  secondaryColor: "#D97A07",
-  tertiaryColor: "#593C19",
+  primaryColor: "#14142b",
+  secondaryColor: "#03001d",
+  tertiaryColor: "#fffade",
+  accentColor: "#eef60b",
   textColor: "#ffffff",
-  secondaryTextColor: "#BFBFBF",
 };
