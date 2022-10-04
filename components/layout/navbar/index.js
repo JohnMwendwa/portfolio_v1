@@ -79,11 +79,6 @@ export default function Navbar() {
               <a>About</a>
             </Link>
           </NavItem>
-          <NavItem>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
-          </NavItem>
         </NavItems>
       </NavWrapper>
     </Headroom>
