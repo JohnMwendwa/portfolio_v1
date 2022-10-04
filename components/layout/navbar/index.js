@@ -8,8 +8,7 @@ const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${(p) => p.theme.colors.bgColor};
-  border-bottom: 1px solid ${(p) => p.theme.colors.tertiaryColor};
+  background-color: ${(p) => p.theme.colors.primaryColor};
   font-size: 1.25rem;
 
   @media (max-width: 600px) {
@@ -33,6 +32,30 @@ const NavItems = styled.ul`
 const NavItem = styled.li`
   padding: 20px 0;
   padding-right: 20px;
+
+  > a {
+    position: relative;
+  }
+
+  > a::before {
+    content: "";
+    margin: -8px 0;
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 4px;
+    background: -webkit-linear-gradient(yellow, orange);
+    bottom: 0;
+    left: -5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
   &:first-child {
     padding-left: 20px;
   }
