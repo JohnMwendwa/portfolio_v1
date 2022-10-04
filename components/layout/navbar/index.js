@@ -62,7 +62,7 @@ export default function Navbar() {
     <Headroom style={{ marginBottom: "20px" }}>
       <NavWrapper>
         <Logo>
-          <LogoImage src="/logo.svg" alt="logo" width={256} height={79} />
+          <LogoImage src="/logo.png" alt="logo" width={256} height={79} />
         </Logo>
         <NavItems>
           <NavItem>
