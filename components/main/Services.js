@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import { TypeAnimation } from "react-type-animation";
 
 const ServicesContainer = styled.div`
   text-align: center;
@@ -14,12 +15,13 @@ const ServicesContainer = styled.div`
     letter-spacing: 3px;
     margin-bottom: 0;
   }
+
   > h2 {
     font-size: 2.625em;
     margin-top: 13px;
   }
 `;
-const CardWrapper = styled.div`
+const CardsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,10 +67,15 @@ const CardContent = styled.div`
 export default function Services() {
   return (
     <ServicesContainer>
-      <p>Services</p>
+      <TypeAnimation
+        sequence={["Services", 1000, ""]}
+        speed={40}
+        wrapper="p"
+        repeat={Infinity}
+      />
       <h2>What I Do</h2>
 
-      <CardWrapper>
+      <CardsWrapper>
         <Card>
           <CardImage>
             <Image
@@ -168,7 +175,7 @@ export default function Services() {
             </p>
           </CardContent>
         </Card>
-      </CardWrapper>
+      </CardsWrapper>
     </ServicesContainer>
   );
 }
