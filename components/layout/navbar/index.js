@@ -10,6 +10,7 @@ const NavWrapper = styled.div`
   align-items: center;
   background-color: ${(p) => p.theme.colors.primaryColor};
   font-size: 1.25rem;
+  padding: 20px 40px 0;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -31,7 +32,7 @@ const NavItems = styled.ul`
 `;
 const NavItem = styled.li`
   padding: 20px 0;
-  padding-right: 20px;
+  padding-right: 30px;
 
   > a {
     position: relative;
@@ -54,10 +55,6 @@ const NavItem = styled.li`
   a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-  }
-
-  &:first-child {
-    padding-left: 20px;
   }
 `;
 
