@@ -86,7 +86,7 @@ export default function Profile() {
           .
         </p>
 
-        <Link href="/contact">
+        <Link href="#contact">
           <a>
             <NormalButton text="Get in Touch" />
           </a>
