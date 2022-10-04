@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import Headroom from "react-headroom";
@@ -20,7 +19,7 @@ const Logo = styled.div`
   padding-left: 10px;
   min-width: 130px;
 `;
-const LogoImage = styled(Image)`
+const LogoImage = styled.img`
   width: 100%;
   min-width: 130px;
 `;
