@@ -82,7 +82,6 @@ export default function Profile() {
               fontWeight: 500,
             }}
           />
-          .
         </p>
 
         <Link href="#contact">
