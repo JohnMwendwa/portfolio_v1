@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -17,6 +16,7 @@ const ProjectsContainer = styled.div`
   > h2 {
     font-size: 2.625em;
     margin-top: 13px;
+    margin-bottom: 80px;
   }
 `;
 const Wrapper = styled.div`
@@ -30,6 +30,7 @@ const ProjectCard = styled.div`
   position: relative;
   width: 325px;
   min-width: 275px;
+  height: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 
@@ -51,8 +52,11 @@ const ProjectCard = styled.div`
   }
 `;
 
-const Img = styled(Image)`
+const Img = styled.img`
   border-radius: 10px;
+  object-fit: fill;
+  width: 100%;
+  height: 350px;
 `;
 const ProjectInfo = styled.div`
   display: flex;
@@ -96,13 +100,7 @@ export default function Projects() {
         <ProjectCard>
           <Link href="https://chatbot.johnmwendwa.me">
             <a>
-              <Img
-                src="/projects/chatbot.png"
-                alt="chatbot image"
-                width={300}
-                height={300}
-                layout="responsive"
-              />
+              <Img src="/projects/chatbot.png" alt="chatbot image" />
 
               <ProjectInfo>
                 <h4>CHATBOT</h4>
@@ -118,13 +116,7 @@ export default function Projects() {
         <ProjectCard>
           <Link href="https://blog.johnmwendwa.me">
             <a>
-              <Img
-                src="/projects/blog.png"
-                alt="blog image"
-                width={300}
-                height={300}
-                layout="responsive"
-              />
+              <Img src="/projects/blog.png" alt="blog image" />
 
               <ProjectInfo>
                 <h4>BLOG</h4>
@@ -140,13 +132,7 @@ export default function Projects() {
         <ProjectCard>
           <Link href="https://johnmwendwa.me/todolist">
             <a>
-              <Img
-                src="/projects/todolist.png"
-                alt="todolist image"
-                width={300}
-                height={300}
-                layout="responsive"
-              />
+              <Img src="/projects/todolist.png" alt="todolist image" />
 
               <ProjectInfo>
                 <h4>TODOLIST</h4>
