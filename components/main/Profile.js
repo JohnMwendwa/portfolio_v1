@@ -1,70 +1,89 @@
-import Image from "next/image";
 import styled from "styled-components";
-import { NormalButton } from "../Buttons";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
+
+import { NormalButton } from "../Buttons";
 
 const ProfileWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: ${(p) => p.theme.colors.bgColor};
-  padding: 60px;
+  height: 500px;
+  padding: 0 40px;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    height: 400px;
   }
 `;
 
-const ProfileImageContainer = styled.div`
-  border: 2px solid black;
-  max-width: 300px;
-  min-width: 275px;
-`;
-
-const ProfileImage = styled(Image)`
-  object-fit: cover;
-  min-width: 275px;
-`;
-
 const ProfileDetails = styled.div`
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  margin-top: -100px;
+
   > h1 {
     margin: 0;
-    padding: 0;
-    text-align: center;
-
-    font-size: 2.625em;
-    text-align: center;
-    line-height: 0.95em;
-    padding-top: 20px;
+    line-height: 1.1;
+    font-weight: 900;
+    font-size: 36px;
 
     @media (min-width: 960px) {
-      text-align: end;
       font-size: 3.75em;
     }
+  }
+
+  > p {
+    margin-bottom: 40px;
+    padding: 0 5px;
   }
 `;
 
 export default function Profile() {
+  const talkAbout = [
+    "HTML",
+    1000,
+    "CSS",
+    1000,
+    "JavaScript",
+    1000,
+    "React",
+    1000,
+    "Next.js",
+    1000,
+    "Node.js",
+    1000,
+    "MongoDB",
+    1000,
+    "React Native",
+    1000,
+  ];
+
   return (
     <ProfileWrapper>
-      <ProfileImageContainer>
-        <ProfileImage
-          src="/profile.jpg"
-          width={600}
-          height={400}
-          layout="responsive"
-        />
-      </ProfileImageContainer>
       <ProfileDetails>
         <h1>
-          I am
+          Hey, I am
           <br />
           John Mwendwa
         </h1>
         <p>
           A very passionate web and mobile developer based in Nairobi, Kenya.
+          <br />
+          You can talk to me about{" "}
+          <TypeAnimation
+            sequence={talkAbout}
+            speed={50}
+            wrapper="span"
+            repeat={Infinity}
+            style={{
+              color: "yellow",
+              fontWeight: 500,
+            }}
+          />{" "}
+          .
         </p>
 
         <Link href="/contact">
