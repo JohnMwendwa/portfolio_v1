@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled from "styled-components";
 import { TypeAnimation } from "react-type-animation";
 
@@ -64,6 +63,8 @@ const CardContent = styled.div`
   }
 `;
 
+const Image = styled.img``;
+
 export default function Services() {
   return (
     <ServicesContainer>
@@ -78,13 +79,7 @@ export default function Services() {
       <CardsWrapper>
         <Card>
           <CardImage>
-            <Image
-              src="/seo.svg"
-              alt="SEO icon"
-              width={80}
-              height={80}
-              layout="responsive"
-            />
+            <Image src="/seo.svg" alt="SEO icon" />
           </CardImage>
           <CardContent>
             <h4>Search Engine Optimization</h4>
@@ -98,13 +93,7 @@ export default function Services() {
 
         <Card>
           <CardImage>
-            <Image
-              src="/monitor.svg"
-              alt="SEO icon"
-              width={30}
-              height={30}
-              layout="responsive"
-            />
+            <Image src="/monitor.svg" alt="SEO icon" />
           </CardImage>
           <CardContent>
             <h4>UI Design</h4>
@@ -118,13 +107,7 @@ export default function Services() {
 
         <Card>
           <CardImage>
-            <Image
-              src="/coding.svg"
-              alt="coding icon"
-              width={80}
-              height={80}
-              layout="responsive"
-            />
+            <Image src="/coding.svg" alt="coding icon" layout="responsive" />
           </CardImage>
           <CardContent>
             <h4>Front-End Developer</h4>
@@ -138,13 +121,7 @@ export default function Services() {
 
         <Card>
           <CardImage>
-            <Image
-              src="/database.svg"
-              alt="database icon"
-              width={80}
-              height={80}
-              layout="responsive"
-            />
+            <Image src="/database.svg" alt="database icon" />
           </CardImage>
           <CardContent>
             <h4>Back-End Developer</h4>
@@ -158,13 +135,7 @@ export default function Services() {
 
         <Card>
           <CardImage>
-            <Image
-              src="/phone.svg"
-              alt="phone icon"
-              width={80}
-              height={80}
-              layout="responsive"
-            />
+            <Image src="/phone.svg" alt="phone icon" />
           </CardImage>
           <CardContent>
             <h4>Mobile App Developer</h4>
