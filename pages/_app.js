@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="description"
-          content="John Mwendwa is a passionate web and mobile developer with a mastery in HTML, CSS, Javascript, React, Next.js,React Native, Express, Node.js and MongoDB."
+          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js,React Native, Express, Node.js and MongoDB."
           key="desc"
         />
 
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           property="og:description"
-          content="John Mwendwa is a passionate web and mobile developer with a mastery in HTML, CSS, Javascript, React, Next.js, Express, Node.js and MongoDB."
+          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, Express, Node.js and MongoDB."
         />
 
         <meta name="og:type" content="website" />
@@ -42,6 +42,25 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:locale" content="en_KE" />
 
         <link rel="icon" type="image/png" href="/favicon.png" />
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Layout>
         <Component {...pageProps} />
