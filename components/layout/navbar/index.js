@@ -17,11 +17,12 @@ const NavWrapper = styled.div`
 `;
 const Logo = styled.div`
   padding-left: 10px;
+  max-width: 279px;
   min-width: 130px;
 `;
 const LogoImage = styled.img`
   width: 100%;
-  min-width: 130px;
+  object-fit: cover;
 `;
 const NavItems = styled.ul`
   display: flex;
@@ -62,7 +63,11 @@ export default function Navbar() {
     <Headroom style={{ marginBottom: "20px" }}>
       <NavWrapper>
         <Logo>
-          <LogoImage src="/logo.png" alt="logo" width={256} height={79} />
+          <Link href="/">
+            <a>
+              <LogoImage src="/logo.png" alt="logo" width={256} height={79} />
+            </a>
+          </Link>
         </Logo>
         <NavItems>
           <NavItem>
