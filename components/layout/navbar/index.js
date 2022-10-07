@@ -19,48 +19,6 @@ const Logo = styled.div`
   padding-left: 10px;
   font-family: Jokerman;
   font-size: 48px;
-
-  & a {
-    position: relative;
-  }
-
-  & a::before,
-  a::after,
-  span::before,
-  span::after {
-    content: "";
-    position: absolute;
-    background-color: yellow;
-    background: -webkit-linear-gradient(yellow, orange);
-  }
-
-  & a::before {
-    top: 5px;
-    height: 5px;
-    width: 20px;
-    left: -10px;
-  }
-
-  & a::after {
-    bottom: 5px;
-    height: 20px;
-    width: 5px;
-    right: -12px;
-  }
-
-  & span::before {
-    top: 5px;
-    left: -10px;
-    height: 20px;
-    width: 5px;
-  }
-
-  & span::after {
-    bottom: 5px;
-    right: -12px;
-    width: 20px;
-    height: 5px;
-  }
 `;
 
 const NavItems = styled.ul`
