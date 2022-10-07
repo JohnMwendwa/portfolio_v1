@@ -17,13 +17,10 @@ const NavWrapper = styled.div`
 `;
 const Logo = styled.div`
   padding-left: 10px;
-  max-width: 279px;
-  min-width: 130px;
+  font-family: Jokerman;
+  font-size: 48px;
 `;
-const LogoImage = styled.img`
-  width: 100%;
-  object-fit: cover;
-`;
+
 const NavItems = styled.ul`
   display: flex;
   justify-content: center;
@@ -65,7 +62,7 @@ export default function Navbar() {
         <Logo>
           <Link href="/">
             <a>
-              <LogoImage src="/logo.png" alt="logo" width={256} height={79} />
+              <span>Mwendwa</span>
             </a>
           </Link>
         </Logo>
