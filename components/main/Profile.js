@@ -35,7 +35,7 @@ const ProfileDetails = styled.div`
     }
 
     @media (min-width: 1200px) {
-      font-size: 5vw;
+      font-size: 4.5vw;
     }
   }
 
