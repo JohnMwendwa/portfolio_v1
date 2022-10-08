@@ -71,6 +71,8 @@ export default function Profile() {
     1000,
     "React Native",
     1000,
+    "SEO",
+    1000,
   ];
 
   return (
