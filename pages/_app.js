@@ -13,13 +13,13 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="description"
-          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js,React Native, Express, Node.js and MongoDB."
+          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, React Native, Express, Node.js and MongoDB."
           key="desc"
         />
 
         <meta
           name="keywords"
-          content="Full Stack developer, John Mwendwa, Mobile Developer, Front-End, React, JavaScript, Node.js,React Native,Next.js,MongoDB"
+          content="Full Stack developer, John Mwendwa, Mobile Developer, Front-End, React, JavaScript, Node.js, React Native, Next.js, MongoDB , SEO"
         />
 
         <meta name="author" content="John Mwendwa" />
@@ -30,18 +30,18 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           property="og:description"
-          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, Express, Node.js and MongoDB."
+          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, React Native, Express, Node.js and MongoDB."
         />
 
         <meta name="og:type" content="website" />
 
         <meta property="og:url" content="https://johnmwendwa.me" />
 
-        <meta property="og:site_name" content="https://johnmwendwa.me" />
+        <meta property="og:site_name" content="John Mwendwa" />
 
         <meta property="og:locale" content="en_KE" />
 
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
 
         <link
           rel="apple-touch-icon"
