@@ -19,6 +19,10 @@ const Logo = styled.div`
   padding-left: 10px;
   font-family: Jokerman;
   font-size: 48px;
+
+  @media (min-width: 1200px) {
+    font-size: 60px;
+  }
 `;
 
 const NavItems = styled.ul`
@@ -30,6 +34,10 @@ const NavItems = styled.ul`
 const NavItem = styled.li`
   padding: 20px 0;
   padding-right: 30px;
+
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
 
   > a {
     position: relative;
