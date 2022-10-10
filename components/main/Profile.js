@@ -8,12 +8,12 @@ const ProfileWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: calc(100vh - 92px);
   padding: 0 40px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 80vh;
+    height: calc(100vh - 159px);
   }
 `;
 
