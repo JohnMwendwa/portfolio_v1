@@ -5,10 +5,10 @@ import Projects from "./Projects";
 
 export default function Main() {
   return (
-    <div>
+    <>
       <Profile />
       <Services />
       <Projects />
-    </div>
+    </>
   );
 }
