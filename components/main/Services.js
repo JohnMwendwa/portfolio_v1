@@ -29,6 +29,10 @@ const CardsWrapper = styled.div`
   gap: 24px;
 
   @media (min-width: 768px) {
+    ${ServicesContainer}.attrs( {
+      id: "John";
+    }
+    );
     flex-direction: row;
   }
 `;
@@ -77,7 +81,7 @@ export default function Services() {
       <h2>What I Do</h2>
 
       <CardsWrapper>
-        <Card>
+        <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
             <Image src="/seo.svg" alt="SEO icon" />
           </CardImage>
@@ -91,7 +95,7 @@ export default function Services() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card data-aos="fade-left" data-aos-anchor-placement="center-bottom">
           <CardImage>
             <Image src="/monitor.svg" alt="SEO icon" />
           </CardImage>
@@ -105,7 +109,7 @@ export default function Services() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
             <Image src="/coding.svg" alt="coding icon" layout="responsive" />
           </CardImage>
@@ -119,7 +123,7 @@ export default function Services() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card data-aos="fade-left" data-aos-anchor-placement="center-bottom">
           <CardImage>
             <Image src="/database.svg" alt="database icon" />
           </CardImage>
@@ -133,7 +137,7 @@ export default function Services() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
             <Image src="/phone.svg" alt="phone icon" />
           </CardImage>
