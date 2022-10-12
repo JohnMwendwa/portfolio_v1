@@ -38,7 +38,8 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 35px;
-  width: 270px;
+  width: 80%;
+  min-width: 250px;
   height: 300px;
   border: 2px solid ${(p) => p.theme.colors.primaryColor};
   border-radius: 5px;
@@ -49,7 +50,8 @@ const Card = styled.div`
   }
 
   @media (min-width: 300px) {
-    width: 350px;
+    max-width: 350px;
+    width: 80%;
   }
 `;
 const CardImage = styled.div`
