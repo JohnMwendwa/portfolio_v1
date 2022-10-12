@@ -3,6 +3,31 @@ import Link from "next/link";
 import styled from "styled-components";
 import Headroom from "react-headroom";
 
+const Head = styled(Headroom)`
+  .headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+  }
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    transition: transform 200ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+    opacity: 0.9;
+  }
+`;
+
 const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -65,7 +90,7 @@ const NavItem = styled.li`
 
 export default function Navbar() {
   return (
-    <Headroom style={{ marginBottom: "20px" }}>
+    <Head disableInlineStyles>
       <NavWrapper>
         <Logo>
           <Link href="/">
@@ -87,6 +112,6 @@ export default function Navbar() {
           </NavItem>
         </NavItems>
       </NavWrapper>
-    </Headroom>
+    </Head>
   );
 }
