@@ -97,7 +97,7 @@ export default function Projects() {
       <p>My work</p>
       <h2>Projects</h2>
       <Wrapper>
-        <ProjectCard>
+        <ProjectCard data-aos="fade-up">
           <Link href="https://chatbot.johnmwendwa.me">
             <a>
               <Img src="/projects/chatbot.png" alt="chatbot image" />
@@ -113,7 +113,7 @@ export default function Projects() {
           </Link>
         </ProjectCard>
 
-        <ProjectCard>
+        <ProjectCard data-aos="fade-up">
           <Link href="https://blog.johnmwendwa.me">
             <a>
               <Img src="/projects/blog.png" alt="blog image" />
@@ -129,7 +129,7 @@ export default function Projects() {
           </Link>
         </ProjectCard>
 
-        <ProjectCard>
+        <ProjectCard data-aos="fade-up">
           <Link href="https://johnmwendwa.me/todolist">
             <a>
               <Img src="/projects/todolist.png" alt="todolist image" />
