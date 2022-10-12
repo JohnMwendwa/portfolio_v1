@@ -97,52 +97,58 @@ export default function Projects() {
       <p>My work</p>
       <h2>Projects</h2>
       <Wrapper>
-        <ProjectCard data-aos="fade-up">
-          <Link href="https://chatbot.johnmwendwa.me">
-            <a>
-              <Img src="/projects/chatbot.png" alt="chatbot image" />
+        <ProjectCard>
+          <div data-aos="fade-up">
+            <Link href="https://chatbot.johnmwendwa.me">
+              <a>
+                <Img src="/projects/chatbot.png" alt="chatbot image" />
 
-              <ProjectInfo>
-                <h4>CHATBOT</h4>
-                <p>
-                  Chat with anyone anonymously without your data getting saved
-                  in any database. In other words, leave no evidence behind.
-                </p>
-              </ProjectInfo>
-            </a>
-          </Link>
+                <ProjectInfo>
+                  <h4>CHATBOT</h4>
+                  <p>
+                    Chat with anyone anonymously without your data getting saved
+                    in any database. In other words, leave no evidence behind.
+                  </p>
+                </ProjectInfo>
+              </a>
+            </Link>
+          </div>
         </ProjectCard>
 
-        <ProjectCard data-aos="fade-up">
-          <Link href="https://blog.johnmwendwa.me">
-            <a>
-              <Img src="/projects/blog.png" alt="blog image" />
+        <ProjectCard>
+          <div data-aos="fade-up">
+            <Link href="https://blog.johnmwendwa.me">
+              <a>
+                <Img src="/projects/blog.png" alt="blog image" />
 
-              <ProjectInfo>
-                <h4>BLOG</h4>
-                <p>
-                  Created a blog for curious developers. I write weekly articles
-                  and sometimes daily.
-                </p>
-              </ProjectInfo>
-            </a>
-          </Link>
+                <ProjectInfo>
+                  <h4>BLOG</h4>
+                  <p>
+                    Created a blog for curious developers. I write weekly
+                    articles and sometimes daily.
+                  </p>
+                </ProjectInfo>
+              </a>
+            </Link>
+          </div>
         </ProjectCard>
 
-        <ProjectCard data-aos="fade-up">
-          <Link href="https://johnmwendwa.me/todolist">
-            <a>
-              <Img src="/projects/todolist.png" alt="todolist image" />
+        <ProjectCard>
+          <div data-aos="fade-up">
+            <Link href="https://johnmwendwa.me/todolist">
+              <a>
+                <Img src="/projects/todolist.png" alt="todolist image" />
 
-              <ProjectInfo>
-                <h4>TODOLIST</h4>
-                <p>
-                  Plan your daily tasks with this simple todo app. You can
-                  delete, edit and filter your tasks.
-                </p>
-              </ProjectInfo>
-            </a>
-          </Link>
+                <ProjectInfo>
+                  <h4>TODOLIST</h4>
+                  <p>
+                    Plan your daily tasks with this simple todo app. You can
+                    delete, edit and filter your tasks.
+                  </p>
+                </ProjectInfo>
+              </a>
+            </Link>
+          </div>
         </ProjectCard>
       </Wrapper>
     </ProjectsContainer>
