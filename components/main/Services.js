@@ -6,6 +6,7 @@ const ServicesContainer = styled.div`
   padding: 100px 0;
   background-color: ${(c) => c.theme.colors.tertiaryColor};
   color: black;
+  overflow-x: hidden;
 
   > p {
     color: ${(c) => c.theme.colors.primaryColor};
