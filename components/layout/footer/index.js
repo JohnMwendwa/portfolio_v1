@@ -28,7 +28,7 @@ export default function Footer() {
   const router = useRouter();
   const path = router.route;
   return (
-    <FooterWrapper id="contact">
+    <FooterWrapper id="contact" data-aos="fade-up">
       <Address />
       <CopyrightWrapper>
         <BackToTopBtn />
