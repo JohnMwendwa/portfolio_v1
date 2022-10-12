@@ -29,10 +29,6 @@ const CardsWrapper = styled.div`
   gap: 24px;
 
   @media (min-width: 768px) {
-    ${ServicesContainer}.attrs( {
-      id: "John";
-    }
-    );
     flex-direction: row;
   }
 `;
