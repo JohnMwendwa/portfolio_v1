@@ -115,7 +115,14 @@ export default function About() {
         <Card>
           <h3>Education</h3>
           <p>
-            I am mostly self-taught, but here are some of the most relevant
+            I always wanted to pursue finance as my career path, and yes I went
+            to the university and studied B.Com in Finance. In the midst of this
+            pursuit, I became more curious with what my friends from other
+            fields were being taught and somehow without even intending to, I
+            fell in love with web development.
+          </p>
+          <p>
+            So am mostly self-taught, but here are some of the most relevant
             certifications I have achieved:
           </p>
         </Card>
