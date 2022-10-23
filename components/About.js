@@ -102,8 +102,11 @@ export default function About() {
           <p>
             The technologies I work with are HTML, CSS and Javascript with a
             focus on the frameworks React.js, React Native, Next.js, Node,
-            Express and MongoDB. I use code not only to do my day-to-day job,
-            but also to solve everyday problems I come across.
+            Express and MongoDB.
+          </p>
+          <p>
+            I use code not only to do my day-to-day job, but also to solve
+            everyday problems I come across.
           </p>
         </Card>
 
