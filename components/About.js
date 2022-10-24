@@ -152,8 +152,8 @@ export default function About() {
         <Card>
           <h3>Hobbies</h3>
           <p>
-            Whenever I am not coding, you&apos;ll either find me in the kitchen
-            trying a new recipe or out with friends hanging out.
+            COOKING. Whenever I am not coding, you&apos;ll either find me in the
+            kitchen trying a new recipe or hanging out with friends .
           </p>
           <p>
             SKATING. I love skating although I can&apos;t say am a professional
