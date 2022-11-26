@@ -32,6 +32,14 @@ const CardsContainer = styled.div`
   }
 `;
 
+const Card = styled.div`
+  outline: 1px solid yellow;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 400px;
+  border-radius: 20px;
+`;
+
 export default function About() {
   return (
     <AboutContainer>
