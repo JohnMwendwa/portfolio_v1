@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
-  padding: 100px 0;
+  padding: 50px 30px 100px;
   text-align: center;
+
   & p {
     font-size: 0.9375em;
     font-weight: 400;
@@ -18,12 +19,26 @@ const AboutContainer = styled.div`
     margin: 20px 0 10px;
   }
 `;
+const CardsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & div:nth-of-type(odd) {
+    margin-left: -180px;
+  }
+  & div:nth-of-type(even) {
+    margin-right: -180px;
+  }
+`;
 
 export default function About() {
   return (
     <AboutContainer>
       <p>Who I am</p>
       <h2>About Me</h2>
+
+      <CardsContainer></CardsContainer>
     </AboutContainer>
   );
 }
