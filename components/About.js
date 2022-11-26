@@ -39,6 +39,14 @@ const Card = styled.div`
   max-width: 400px;
   border-radius: 20px;
 `;
+const Divider = styled.span`
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 0px;
+  margin: 0 auto;
+  border: 3px dashed yellow;
+`;
 
 export default function About() {
   return (
