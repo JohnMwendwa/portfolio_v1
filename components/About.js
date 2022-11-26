@@ -5,7 +5,7 @@ const AboutContainer = styled.div`
   padding: 50px 30px 100px;
   text-align: center;
 
-  & p {
+  > p {
     font-size: 0.9375em;
     font-weight: 400;
     text-transform: uppercase;
@@ -54,7 +54,29 @@ export default function About() {
       <p>Who I am</p>
       <h2>About Me</h2>
 
-      <CardsContainer></CardsContainer>
+      <CardsContainer>
+        <Card>
+          <h3>Education</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            animi repudiandae quam inventore aliquam dolorum maxime autem non
+            illo sunt fugiat tenetur, modi blanditiis temporibus quis enim
+            voluptatem. Ea, totam!
+          </p>
+        </Card>
+
+        <Divider />
+
+        <Card>
+          <h3>Skills</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            animi repudiandae quam inventore aliquam dolorum maxime autem non
+            illo sunt fugiat tenetur, modi blanditiis temporibus quis enim
+            voluptatem. Ea, totam!
+          </p>
+        </Card>
+      </CardsContainer>
     </AboutContainer>
   );
 }
