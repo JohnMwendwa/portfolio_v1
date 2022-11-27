@@ -102,13 +102,14 @@ export default function Navbar() {
         </Logo>
         <NavItems>
           <NavItem>
-            <Link href="https://blog.johnmwendwa.me">
-              <a>Blog</a>
-            </Link>
-          </NavItem>
-          <NavItem>
             <Link href="/about">
               <a>About</a>
+            </Link>
+          </NavItem>
+
+          <NavItem>
+            <Link href="https://blog.johnmwendwa.me">
+              <a>Blog</a>
             </Link>
           </NavItem>
         </NavItems>
