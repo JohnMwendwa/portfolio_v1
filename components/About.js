@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -92,7 +93,7 @@ export default function About() {
 
       <CardsContainer>
         <Card>
-          <h3>Education</h3>
+          <h3>Skills</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
             animi repudiandae quam inventore aliquam dolorum maxime autem non
@@ -104,14 +105,38 @@ export default function About() {
         <Divider />
 
         <Card>
-          <h3>Skills</h3>
+          <h3>Education</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            animi repudiandae quam inventore aliquam dolorum maxime autem non
-            illo sunt fugiat tenetur, modi blanditiis temporibus quis enim
-            voluptatem. Ea, totam!
+            I am mostly self-taught, but here are some of the most relevant
+            certifications I have achieved:
           </p>
         </Card>
+
+        <Divider />
+
+        <div>
+          <Image
+            src="/authentication.jpg"
+            alt="certificate"
+            width={300}
+            height={200}
+          />
+        </div>
+        <Divider />
+
+        <div>
+          <Image
+            src="/authentication.jpg"
+            alt="certificate"
+            width={300}
+            height={200}
+          />
+        </div>
+        <Divider />
+
+        <div>
+          <Image src="/atlas.jpg" alt="certificate" width={300} height={200} />
+        </div>
       </CardsContainer>
     </AboutContainer>
   );
