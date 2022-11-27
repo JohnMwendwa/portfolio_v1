@@ -34,10 +34,14 @@ const CardsContainer = styled.div`
 
 const Card = styled.div`
   outline: 1px solid yellow;
-  padding: 20px;
+  padding: 20px 30px;
   min-width: 300px;
   max-width: 400px;
   border-radius: 20px;
+
+  & p {
+    text-align: start;
+  }
 `;
 const Divider = styled.span`
   display: flex;
