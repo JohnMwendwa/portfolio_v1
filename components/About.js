@@ -3,8 +3,12 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
-  padding: 50px 30px 50px;
+  padding: 0px 30px 50px;
   text-align: center;
+
+  @media (min-width: 600px) {
+    padding-top: 50px;
+  }
 
   > p {
     font-size: 0.9375em;
@@ -26,20 +30,22 @@ const CardsContainer = styled.div`
   align-items: center;
   margin-top: 20px;
 
-  & div:nth-of-type(odd) {
-    margin-left: -180px;
-  }
-  & div:nth-of-type(even) {
-    margin-right: -180px;
+  @media (min-width: 600px) {
+    & div:nth-of-type(odd) {
+      margin-left: -180px;
+    }
+    & div:nth-of-type(even) {
+      margin-right: -180px;
+    }
   }
 `;
 
 const Card = styled.div`
   outline: 1px solid yellow;
   padding: 20px 30px;
-  min-width: 300px;
+  min-width: 200px;
   max-width: 400px;
-  border-radius: 20px;
+  border-radius: 10px;
 
   & p {
     text-align: start;
