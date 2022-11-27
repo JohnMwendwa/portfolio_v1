@@ -55,6 +55,7 @@ const NavItems = styled.ul`
   justify-content: center;
   list-style: none;
   margin: 0 20px;
+  font-family: jokerman;
 `;
 const NavItem = styled.li`
   padding: 20px 0;
