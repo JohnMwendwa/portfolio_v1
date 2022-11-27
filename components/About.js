@@ -132,11 +132,27 @@ export default function About() {
             height={200}
           />
         </div>
+
         <Divider />
 
         <div>
           <Image src="/atlas.jpg" alt="certificate" width={300} height={200} />
         </div>
+
+        <Divider />
+
+        <Card>
+          <h3>Hobbies</h3>
+          <p>
+            Whenever I am not coding, you&apos;ll either find me in the kitchen
+            trying a new recipe or out with friends hanging out.
+          </p>
+          <p>
+            SKATING. I love skating although I can&apos;t say am a professional
+            but I can ride backwards.
+          </p>
+          <p>MOVIES. Am also a big fan of movies and series.</p>
+        </Card>
       </CardsContainer>
     </AboutContainer>
   );
