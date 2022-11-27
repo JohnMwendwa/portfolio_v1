@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -121,7 +120,7 @@ export default function About() {
         <Divider />
 
         <div>
-          <Image
+          <img
             src="/authentication.jpg"
             alt="certificate"
             width={300}
@@ -131,7 +130,7 @@ export default function About() {
         <Divider />
 
         <div>
-          <Image
+          <img
             src="/authentication.jpg"
             alt="certificate"
             width={300}
@@ -142,7 +141,7 @@ export default function About() {
         <Divider />
 
         <div>
-          <Image src="/atlas.jpg" alt="certificate" width={300} height={200} />
+          <img src="/atlas.jpg" alt="certificate" width={300} height={200} />
         </div>
 
         <Divider />
