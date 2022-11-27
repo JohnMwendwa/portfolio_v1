@@ -101,10 +101,10 @@ export default function About() {
         <Card>
           <h3>Skills</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            animi repudiandae quam inventore aliquam dolorum maxime autem non
-            illo sunt fugiat tenetur, modi blanditiis temporibus quis enim
-            voluptatem. Ea, totam!
+            The technologies I work with are HTML, CSS and Javascript with a
+            focus on the frameworks React.js, React Native, Next.js, Node,
+            Express and MongoDB. I use code not only to do my day-to-day job,
+            but also to solve everyday problems I come across.
           </p>
         </Card>
 
