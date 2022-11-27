@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
-  padding: 50px 30px 100px;
+  padding: 50px 30px 50px;
   text-align: center;
 
   > p {
@@ -23,6 +23,7 @@ const CardsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 
   & div:nth-of-type(odd) {
     margin-left: -180px;
@@ -41,6 +42,14 @@ const Card = styled.div`
 
   & p {
     text-align: start;
+  }
+
+  > h3 {
+    background: -webkit-linear-gradient(yellow, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 `;
 const Divider = styled.span`
