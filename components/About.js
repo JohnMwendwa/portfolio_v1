@@ -43,9 +43,32 @@ const Divider = styled.span`
   display: flex;
   justify-content: center;
   height: 50px;
-  width: 0px;
+  width: 5px;
   margin: 0 auto;
-  border: 3px dashed yellow;
+  position: relative;
+  overflow-y: hidden;
+  background-color: white;
+
+  ::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: animate 3s ease-in infinite;
+    background-color: orange;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(99%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 `;
 
 export default function About() {
