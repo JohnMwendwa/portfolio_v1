@@ -132,7 +132,7 @@ export default function About() {
 
         <div>
           <img
-            src="/authentication.jpg"
+            src="/certificates/mongodb_basics.jpg"
             alt="certificate"
             width={300}
             height={200}
@@ -142,7 +142,7 @@ export default function About() {
 
         <div>
           <img
-            src="/authentication.jpg"
+            src="/certificates/authentication.jpg"
             alt="certificate"
             width={300}
             height={200}
@@ -152,7 +152,12 @@ export default function About() {
         <Divider />
 
         <div>
-          <img src="/atlas.jpg" alt="certificate" width={300} height={200} />
+          <img
+            src="/certificates/atlas.jpg"
+            alt="certificate"
+            width={300}
+            height={200}
+          />
         </div>
 
         <Divider />
