@@ -161,6 +161,26 @@ export default function About() {
         </div>
 
         <Divider />
+        <div>
+          <img
+            src="/certificates/cyber_security.jpg"
+            alt="certificate"
+            width={300}
+            height={200}
+          />
+        </div>
+
+        <Divider />
+        <div>
+          <img
+            src="/certificates/modern_javascript.jpg"
+            alt="certificate"
+            width={300}
+            height={200}
+          />
+        </div>
+
+        <Divider />
 
         <Card>
           <h3>Hobbies</h3>
