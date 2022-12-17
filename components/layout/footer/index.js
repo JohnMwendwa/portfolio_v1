@@ -28,8 +28,12 @@ const Copyright = styled.div`
   margin-right: 20px;
 `;
 
-export const Github = styled.div`
+const Github = styled.div`
   cursor: pointer;
+
+  svg:hover {
+    fill: yellow;
+  }
 `;
 
 export default function Footer() {
