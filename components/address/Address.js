@@ -46,7 +46,7 @@ export default function Address() {
         <h5>Email</h5>
         <p>
           <a href="mailto:dev.johnmwendwa@gmail.com">
-            dev@johnmwendwa@gmail.com
+            dev.johnmwendwa@gmail.com
           </a>
         </p>
       </div>
