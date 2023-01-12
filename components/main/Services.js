@@ -20,6 +20,10 @@ const ServicesContainer = styled.div`
     font-size: 2.625em;
     margin-top: 13px;
   }
+
+  @media (min-width: 1280px) {
+    border-radius: 10px;
+  }
 `;
 const CardsWrapper = styled.div`
   display: flex;
