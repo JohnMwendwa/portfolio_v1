@@ -41,6 +41,10 @@ const NavWrapper = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  @media (min-width: 1280px) {
+    justify-content: space-around;
+  }
 `;
 const Logo = styled.div`
   padding-left: 10px;
@@ -51,7 +55,7 @@ const Logo = styled.div`
     padding: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     font-size: 60px;
   }
 `;
@@ -72,7 +76,7 @@ const NavItem = styled.li`
   padding: 20px 0;
   padding-right: 30px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     font-size: 1.5rem;
   }
 
