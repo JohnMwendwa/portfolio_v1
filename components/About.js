@@ -102,8 +102,8 @@ export default function About() {
           <h3>Skills</h3>
           <p>
             The technologies I work with are HTML, CSS and Javascript with a
-            focus on the frameworks React.js, TypeScript, Next.js, Node, Express
-            and MongoDB.
+            focus on the frameworks Tailwindcss, React.js, TypeScript, Next.js,
+            Node, Express and MongoDB.
           </p>
           <p>
             I use code not only to do my day-to-day job, but also to solve
