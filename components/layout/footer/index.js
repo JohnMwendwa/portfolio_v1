@@ -13,6 +13,10 @@ const FooterWrapper = styled.footer`
   margin-top: auto;
   padding: 40px 10vw 0;
   background-color: ${(p) => p.theme.colors.secondaryColor};
+
+  @media (min-width: 1280px) {
+    border-radius: 10px 10px 0 0;
+  }
 `;
 const CopyrightWrapper = styled.div`
   display: flex;
