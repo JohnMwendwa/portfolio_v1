@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-const ProjectsContainer = styled.div`
+const ProjectsContainer = styled.section`
   text-align: center;
   padding: 100px 0;
   background-color: ${(p) => p.theme.colors.bgColor};
@@ -72,7 +72,7 @@ const ProjectInfo = styled.div`
   z-index: -1;
   transition: 0.5s ease-in-out;
 
-  & h4 {
+  & h3 {
     margin: 0;
     font-size: 28px;
     background: -webkit-linear-gradient(yellow, orange);
@@ -99,12 +99,20 @@ export default function Projects() {
       <Wrapper>
         <ProjectCard>
           <div data-aos="fade-up">
-            <Link href="https://chatbot.johnmwendwa.me">
+            <Link
+              href="https://chatbot.johnmwendwa.me"
+              aria-label="visit the chatbot project site"
+            >
               <a>
-                <Img src="/projects/chatbot.png" alt="chatbot image" />
+                <Img
+                  src="/projects/chatbot.webp"
+                  alt="chatbot image"
+                  width={325}
+                  height={350}
+                />
 
                 <ProjectInfo>
-                  <h4>CHATBOT</h4>
+                  <h3>CHATBOT</h3>
                   <p>
                     Chat with anyone anonymously without your data getting saved
                     in any database. In other words, leave no evidence behind.
@@ -117,12 +125,20 @@ export default function Projects() {
 
         <ProjectCard>
           <div data-aos="fade-up">
-            <Link href="https://blog.johnmwendwa.me">
+            <Link
+              href="https://blog.johnmwendwa.me"
+              aria-label="visit my blog website"
+            >
               <a>
-                <Img src="/projects/blog.png" alt="blog image" />
+                <Img
+                  src="/projects/blog.webp"
+                  alt="blog image"
+                  width={325}
+                  height={350}
+                />
 
                 <ProjectInfo>
-                  <h4>BLOG</h4>
+                  <h3>BLOG</h3>
                   <p>
                     Created a blog for curious developers. I write weekly
                     articles and sometimes daily.
@@ -135,12 +151,20 @@ export default function Projects() {
 
         <ProjectCard>
           <div data-aos="fade-up">
-            <Link href="https://johnmwendwa.me/todolist">
+            <Link
+              href="https://johnmwendwa.me/todolist"
+              aria-label="todolist project"
+            >
               <a>
-                <Img src="/projects/todolist.png" alt="todolist image" />
+                <Img
+                  src="/projects/todolist.webp"
+                  alt="todolist image"
+                  width={325}
+                  height={350}
+                />
 
                 <ProjectInfo>
-                  <h4>TODOLIST</h4>
+                  <h3>TODOLIST</h3>
                   <p>
                     Plan your daily tasks with this simple todo app. You can
                     delete, edit and filter your tasks.
