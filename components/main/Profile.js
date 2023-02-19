@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 import { NormalButton } from "../Buttons";
 
-const ProfileWrapper = styled.div`
+const ProfileWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@ export default function Profile() {
           />
         </p>
 
-        <Link href="#contact">
+        <Link href="#contact" aria-label="Go to contact section">
           <a>
             <NormalButton text="Get in Touch" />
           </a>
