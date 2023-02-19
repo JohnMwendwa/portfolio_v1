@@ -4,6 +4,7 @@
     url("../public/fonts/Jokerman.woff2") format("woff2"),
     url("../public/fonts/Jokerman.woff") format("woff"),
     url("../public/fonts/Jokerman.ttf") format("truetype");
+  font-display: swap;
 }
 
 html,
