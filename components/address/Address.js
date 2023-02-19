@@ -8,7 +8,7 @@ const AddressContainer = styled.div`
   text-align: center;
   padding: 45px 0 90px;
 
-  & h5 {
+  & h4 {
     margin: 10px 0;
     font-size: 1.125em;
     background: -webkit-linear-gradient(yellow, orange);
@@ -39,11 +39,11 @@ export default function Address() {
   return (
     <AddressContainer>
       <div>
-        <h5>Address</h5>
+        <h4>Address</h4>
         <p>Nairobi, kenya</p>
       </div>
       <div>
-        <h5>Email</h5>
+        <h4>Email</h4>
         <p>
           <a href="mailto:dev.johnmwendwa@gmail.com">
             dev.johnmwendwa@gmail.com
@@ -51,7 +51,7 @@ export default function Address() {
         </p>
       </div>
       <div>
-        <h5>Phone</h5>
+        <h4>Phone</h4>
         <a href="tel:+254716237927">+254716237927</a>
       </div>
     </AddressContainer>
