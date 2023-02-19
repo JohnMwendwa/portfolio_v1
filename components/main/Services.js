@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { TypeAnimation } from "react-type-animation";
 
-const ServicesContainer = styled.div`
+const ServicesContainer = styled.section`
   text-align: center;
   padding: 100px 0;
   background-color: ${(c) => c.theme.colors.tertiaryColor};
@@ -48,7 +48,7 @@ const Card = styled.div`
   border: 2px solid ${(p) => p.theme.colors.primaryColor};
   border-radius: 5px;
 
-  & h4 {
+  & h3 {
     font-size: 1.525em;
     margin: 5px 0 0 0;
   }
@@ -86,10 +86,10 @@ export default function Services() {
       <CardsWrapper>
         <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
-            <Image src="/seo.svg" alt="SEO icon" />
+            <Image width={50} height={50} src="/seo.svg" alt="SEO icon" />
           </CardImage>
           <CardContent>
-            <h4>Search Engine Optimization</h4>
+            <h3>Search Engine Optimization</h3>
             <p>
               Experience with
               <br />
@@ -100,10 +100,10 @@ export default function Services() {
 
         <Card data-aos="fade-left" data-aos-anchor-placement="center-bottom">
           <CardImage>
-            <Image src="/monitor.svg" alt="SEO icon" />
+            <Image width={50} height={50} src="/monitor.svg" alt="SEO icon" />
           </CardImage>
           <CardContent>
-            <h4>UI Design</h4>
+            <h3>UI Design</h3>
             <p>
               Experience with
               <br />
@@ -114,10 +114,16 @@ export default function Services() {
 
         <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
-            <Image src="/coding.svg" alt="coding icon" layout="responsive" />
+            <Image
+              width={50}
+              height={50}
+              src="/coding.svg"
+              alt="coding icon"
+              layout="responsive"
+            />
           </CardImage>
           <CardContent>
-            <h4>Front-End Developer</h4>
+            <h3>Front-End Developer</h3>
             <p>
               Experience with
               <br />
@@ -128,10 +134,15 @@ export default function Services() {
 
         <Card data-aos="fade-left" data-aos-anchor-placement="center-bottom">
           <CardImage>
-            <Image src="/database.svg" alt="database icon" />
+            <Image
+              width={50}
+              height={50}
+              src="/database.svg"
+              alt="database icon"
+            />
           </CardImage>
           <CardContent>
-            <h4>Back-End Developer</h4>
+            <h3>Back-End Developer</h3>
             <p>
               Experience with
               <br />
@@ -142,10 +153,10 @@ export default function Services() {
 
         <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
-            <Image src="/phone.svg" alt="phone icon" />
+            <Image width={50} height={50} src="/phone.svg" alt="phone icon" />
           </CardImage>
           <CardContent>
-            <h4>Mobile App Developer</h4>
+            <h3>Mobile App Developer</h3>
             <p>
               Experience with
               <br />
