@@ -9,28 +9,28 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>John Mwendwa: Full Stack web and mobile developer</title>
+        <title>John Mwendwa: Full Stack web developer</title>
 
         <meta
           name="description"
-          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, React Native, Express, Node.js and MongoDB."
+          content="John Mwendwa is a passionate web developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, Express, Node.js and MongoDB."
           key="desc"
         />
 
         <meta
           name="keywords"
-          content="Full Stack developer, John Mwendwa, Mobile Developer, Front-End, React, JavaScript, Node.js, React Native, Next.js, MongoDB , SEO"
+          content="Full Stack developer, John Mwendwa, Front-End, React, JavaScript, Node.js, Next.js, MongoDB , SEO"
         />
 
         <meta name="author" content="John Mwendwa" />
         <meta
           property="og:title"
-          content="John Mwendwa: Full Stack web and mobile developer"
+          content="John Mwendwa: Full Stack web developer"
         />
 
         <meta
           property="og:description"
-          content="John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, React Native, Express, Node.js and MongoDB."
+          content="John Mwendwa is a passionate web developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, Express, Node.js and MongoDB."
         />
 
         <meta name="og:type" content="website" />
