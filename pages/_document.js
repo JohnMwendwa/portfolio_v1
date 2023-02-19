@@ -25,7 +25,15 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/fonts/Jokerman.woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
