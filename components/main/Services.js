@@ -151,7 +151,7 @@ export default function Services() {
           </CardContent>
         </Card>
 
-        <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        {/* <Card data-aos="fade-right" data-aos-anchor-placement="center-bottom">
           <CardImage>
             <Image width={50} height={50} src="/phone.svg" alt="phone icon" />
           </CardImage>
@@ -163,7 +163,7 @@ export default function Services() {
               React Native
             </p>
           </CardContent>
-        </Card>
+        </Card> */}
       </CardsWrapper>
     </ServicesContainer>
   );
