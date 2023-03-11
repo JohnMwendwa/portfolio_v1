@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="keywords"
-          content="Full Stack developer, John Mwendwa, Front-End, React, JavaScript, Node.js, Next.js, MongoDB , SEO"
+          content="Full Stack web developer, John Mwendwa, Front-End, React, JavaScript, Node.js, Next.js, MongoDB , SEO"
         />
 
         <meta name="author" content="John Mwendwa" />
