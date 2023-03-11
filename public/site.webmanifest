@@ -1,8 +1,8 @@
 {
   "start_url": "https://johnmwendwa.me",
   "name": "John Mwendwa",
-  "short_name": "Mwendwa",
-  "description": "John Mwendwa is a passionate web and mobile developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, React Native, Express, Node.js and MongoDB.",
+  "short_name": "John Mwendwa",
+  "description": "John Mwendwa is a passionate web developer with a deep mastery in HTML, CSS, Javascript, React, Next.js, React Native, Express, Node.js and MongoDB.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -15,7 +15,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#14142b",
   "background_color": "#ffffff",
   "display": "standalone"
 }
