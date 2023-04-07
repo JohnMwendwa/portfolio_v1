@@ -8,47 +8,40 @@ const ProfileWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 92px);
-  padding: 0 40px;
+  height: calc(100vh - 6em);
+  padding: 0 2.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     flex-direction: column;
-    height: calc(100vh - 159px);
   }
 `;
 
 const ProfileDetails = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -6.25rem;
 
   > h1 {
     margin: 0;
     line-height: 1.1;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 2rem;
 
-    @media (min-width: 768px) {
-      font-size: 3.75em;
+    @media (min-width: 40em) {
+      font-size: 3rem;
     }
 
-    @media (min-width: 1200px) {
-      font-size: 4.5vw;
+    @media (min-width: 80em) {
+      font-size: 4.5rem;
     }
   }
 
   > p {
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
     padding: 0 2px;
 
-    @media (min-width: 768px) {
-      font-size: 18px;
-    }
-
-    @media (min-width: 960px) {
-      font-size: 1.5vw;
+    @media (min-width: 48em) {
+      font-size: 1.25rem;
     }
   }
 `;
