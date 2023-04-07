@@ -34,29 +34,28 @@ const NavWrapper = styled.div`
   align-items: baseline;
   background-color: ${(p) => p.theme.colors.primaryColor};
   font-size: 1.25rem;
-  padding: 20px 40px 0;
+  padding: 1.25rem 2rem 0;
+  max-width: 80em;
+  margin: 0 auto;
 
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  @media (min-width: 1280px) {
-    justify-content: space-around;
-  }
 `;
 const Logo = styled.div`
-  padding-left: 10px;
+  padding-left: 1rem;
   font-family: Jokerman, Roboto;
-  font-size: 48px;
+  font-size: 2.5em;
+  transition: all 0.3s linear;
 
-  @media (max-width: 600px) {
+  @media (max-width: 600em) {
     padding: 0;
   }
 
-  @media (min-width: 1280px) {
-    font-size: 60px;
+  @media (min-width: 80em) {
+    font-size: 3em;
   }
 `;
 
@@ -64,19 +63,20 @@ const NavItems = styled.ul`
   display: flex;
   justify-content: center;
   list-style: none;
-  margin: 0 20px;
+  margin: 0 1.25rem;
   padding: 0;
   font-family: jokerman, Roboto;
+  transition: all 0.3s linear;
 
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     margin: 0;
   }
 `;
 const NavItem = styled.li`
-  padding: 20px 0;
-  padding-right: 30px;
+  padding: 1.25rem 0;
+  padding-right: 2rem;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 80em) {
     font-size: 1.5rem;
   }
 
@@ -86,13 +86,13 @@ const NavItem = styled.li`
 
   > a::before {
     content: "";
-    margin: -8px 0;
+    margin: -0.5rem 0;
     position: absolute;
-    width: calc(100% + 10px);
-    height: 4px;
+    width: calc(100% + 0.5rem);
+    height: 0.25rem;
     background: -webkit-linear-gradient(yellow, orange);
     bottom: 0;
-    left: -5px;
+    left: -0.25rem;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
