@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const ServicesContainer = styled.section`
   text-align: center;
-  padding: 100px 0;
+  padding: 6.25rem 0;
   background-color: ${(c) => c.theme.colors.tertiaryColor};
   color: black;
   overflow-x: hidden;
@@ -18,55 +18,52 @@ const ServicesContainer = styled.section`
 
   > h2 {
     font-size: 2.625em;
-    margin-top: 13px;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 80em) {
     border-radius: 10px;
   }
 `;
 const CardsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
+  gap: 1.5rem;
 `;
 const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 35px;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  padding: 2em;
   width: 80%;
-  min-width: 250px;
-  height: 300px;
+  min-width: 16rem;
+  height: 18.75rem;
   border: 2px solid ${(p) => p.theme.colors.primaryColor};
-  border-radius: 5px;
+  border-radius: 0.5rem;
 
   & h3 {
-    font-size: 1.525em;
-    margin: 5px 0 0 0;
+    font-size: 1.25em;
   }
 
-  @media (min-width: 300px) {
-    max-width: 350px;
-    width: 80%;
+  @media (min-width: 19em) {
+    max-width: 22em;
   }
 `;
 const CardImage = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 3em;
+  height: 3em;
   margin: 0 auto;
 `;
 const CardContent = styled.div`
   & p {
-    line-height: 30px;
-    font-size: 18px;
+    line-height: 1.5;
+    font-size: 1.125rem;
+
+    span {
+      font-size: 0.875rem;
+    }
   }
 `;
 
@@ -91,7 +88,7 @@ export default function Services() {
           <CardContent>
             <h3>Search Engine Optimization</h3>
             <p>
-              Experience with
+              <span> Experience with</span>
               <br />
               Best SEO marketing tools and practices
             </p>
@@ -103,9 +100,9 @@ export default function Services() {
             <Image width={50} height={50} src="/monitor.svg" alt="SEO icon" />
           </CardImage>
           <CardContent>
-            <h3>UI Design</h3>
+            <h3>UI Designer</h3>
             <p>
-              Experience with
+              <span> Experience with</span>
               <br />
               Adobe XD
             </p>
@@ -125,7 +122,7 @@ export default function Services() {
           <CardContent>
             <h3>Front-End Developer</h3>
             <p>
-              Experience with
+              <span> Experience with</span>
               <br />
               HTML, CSS, Javascript, React.js and Nextjs
             </p>
@@ -144,7 +141,7 @@ export default function Services() {
           <CardContent>
             <h3>Back-End Developer</h3>
             <p>
-              Experience with
+              <span> Experience with</span>
               <br />
               Nodejs, Express and MongoDB
             </p>
