@@ -48,6 +48,7 @@ const Card = styled.div`
 
   & p {
     text-align: start;
+    line-height: 1.5;
   }
 
   > h3 {
@@ -79,13 +80,13 @@ const Divider = styled.span`
 
   @keyframes animate {
     0% {
-      transform: translateY(0);
-    }
-    50% {
       transform: translateY(99%);
     }
+    50% {
+      transform: translateY(0%);
+    }
     100% {
-      transform: translateY(0);
+      transform: translateY(99%);
     }
   }
 `;
