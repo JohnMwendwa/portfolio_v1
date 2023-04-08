@@ -28,45 +28,45 @@ const Wrapper = styled.div`
 
 const ProjectCard = styled.div`
   position: relative;
-  width: 325px;
+  width: 20em;
   min-width: 275px;
-  height: 350px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  height: 22em;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 
   transform-origin: center;
   transition: 0.5s;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 
   &:nth-child(even) {
-    transform: perspective(800px) rotateY(25deg);
+    transform: perspective(50em) rotateY(25deg);
   }
 
   &:nth-child(odd) {
-    transform: perspective(800px) rotateY(-25deg);
+    transform: perspective(50em) rotateY(-25deg);
   }
 
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
     transform: perspective(800px) rotateY(0deg);
   }
 `;
 
 const Img = styled.img`
-  border-radius: 10px;
+  border-radius: 0.5rem;
   object-fit: fill;
   width: 100%;
-  height: 350px;
+  height: 22em;
 `;
 const ProjectInfo = styled.div`
-  display: flex;
-  padding: 0 30px;
+  display: none;
+  padding: 0 2rem;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   background-color: ${(p) => p.theme.colors.primaryColor};
   border: 2px solid ${(p) => p.theme.colors.accentColor};
-  border-radius: 10px;
+  border-radius: 0.5rem;
   top: 0;
   bottom: 0;
   z-index: -1;
@@ -74,7 +74,7 @@ const ProjectInfo = styled.div`
 
   & h3 {
     margin: 0;
-    font-size: 28px;
+    font-size: 1.75rem;
     background: -webkit-linear-gradient(yellow, orange);
     background-clip: text;
     -webkit-background-clip: text;
@@ -82,7 +82,7 @@ const ProjectInfo = styled.div`
     -webkit-text-fill-color: transparent;
   }
   & p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   ${ProjectCard}:hover & {
@@ -97,32 +97,6 @@ export default function Projects() {
       <p>My work</p>
       <h2>Projects</h2>
       <Wrapper>
-        <ProjectCard>
-          <div data-aos="fade-up">
-            <Link
-              href="https://chatbot.johnmwendwa.me"
-              aria-label="visit the chatbot project site"
-            >
-              <a>
-                <Img
-                  src="/projects/chatbot.webp"
-                  alt="chatbot image"
-                  width={325}
-                  height={350}
-                />
-
-                <ProjectInfo>
-                  <h3>CHATBOT</h3>
-                  <p>
-                    Chat with anyone anonymously without your data getting saved
-                    in any database. In other words, leave no evidence behind.
-                  </p>
-                </ProjectInfo>
-              </a>
-            </Link>
-          </div>
-        </ProjectCard>
-
         <ProjectCard>
           <div data-aos="fade-up">
             <Link
@@ -142,6 +116,32 @@ export default function Projects() {
                   <p>
                     Created a blog for curious developers. I write weekly
                     articles and sometimes daily.
+                  </p>
+                </ProjectInfo>
+              </a>
+            </Link>
+          </div>
+        </ProjectCard>
+
+        <ProjectCard>
+          <div data-aos="fade-up">
+            <Link
+              href="https://chatbot.johnmwendwa.me"
+              aria-label="visit the chatbot project site"
+            >
+              <a>
+                <Img
+                  src="/projects/chatbot.webp"
+                  alt="chatbot image"
+                  width={325}
+                  height={350}
+                />
+
+                <ProjectInfo>
+                  <h3>CHATBOT</h3>
+                  <p>
+                    Chat with anyone anonymously without your data getting saved
+                    in any database. In other words, leave no evidence behind.
                   </p>
                 </ProjectInfo>
               </a>
