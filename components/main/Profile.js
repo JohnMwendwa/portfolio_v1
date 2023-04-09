@@ -8,7 +8,6 @@ const ProfileWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 6em);
   padding: 0 2.5rem;
 
   @media (max-width: 48em) {
@@ -30,7 +29,7 @@ const ProfileDetails = styled.div`
       font-size: 3rem;
     }
 
-    @media (min-width: 80em) {
+    @media (min-width: 90em) {
       font-size: 4.5rem;
     }
   }
