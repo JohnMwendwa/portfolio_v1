@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>John Mwendwa | Full Stack web develope</title>
+        <title>John Mwendwa - Full Stack web developer</title>
 
         <meta
           name="description"
