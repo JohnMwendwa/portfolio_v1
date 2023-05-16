@@ -152,22 +152,22 @@ export default function Projects() {
         <ProjectCard>
           <div data-aos="fade-up">
             <Link
-              href="https://johnmwendwa.me/todolist"
-              aria-label="todolist project"
+              href="https://movies.johnmwendwa.me"
+              aria-label="movies project"
             >
               <a>
                 <Img
-                  src="/projects/todolist.webp"
-                  alt="todolist image"
+                  src="/projects/movies.webp"
+                  alt="movies screenshot image"
                   width={325}
                   height={350}
                 />
 
                 <ProjectInfo>
-                  <h3>TODOLIST</h3>
+                  <h3>Movies App</h3>
                   <p>
-                    Plan your daily tasks with this simple todo app. You can
-                    delete, edit and filter your tasks.
+                    Download your favorite movies for free without ads stressing
+                    you out.
                   </p>
                 </ProjectInfo>
               </a>
